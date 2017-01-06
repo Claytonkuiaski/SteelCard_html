@@ -1,0 +1,74 @@
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables
+@import ../bower_components/breakpoint-sass/stylesheets/breakpoint
+@import mixins
+
+
+.footer
+	h2 
+		color: #6b6969
+		margin-top: 50px
+		font-family: times new romam
+	background:
+			color: #ebebeb
+	margin-top: 100px
+	li 
+		display: inline-block
+		padding-bottom: 50px
+		a 
+			color: #6b6969	
+			font-size: 20px
+			padding-right: 8px
+.social
+	+make-sm-column(3)
+	border-right: solid 1px #5b5a5a	
+	margin-top: 30px
+	margin-bottom: 30px
+	ul 
+		li 
+			a 
+				font-size: 30px
+	h2 
+		margin-left: 40px			
+	+breakpoint($tablet)
+		+make-sm-column(12)
+		border-bottom: solid 1px #5b5a5a
+		border-right: 0px
+		text-align: center
+		h2 
+			font-size: 50px
+		ul 
+			li 
+				a 
+					font-size: 60px
+					padding-left: 10px
+.marcas
+	+make-sm-column(9)	
+	img
+		width: 500px
+		margin-left: 150px
+		margin-right: 100px
+		margin-top: 30px
+		+img-responsive
+		+breakpoint($tablet)
+			+make-sm-column(12)
+			margin-bottom: 30px
+				padding-left: 50%
+		+breakpoint($celubot)
+			+img-responsive
+			margin: 0 auto
+			margin-bottom: 30px	
+		+breakpoint($celular)
+			margin-left: 1px
+	
+.direitos
+	+make-sm-column(12)
+	background:
+		color: #d9d9d9		
+	p 
+		text-align: center
+		margin-top: 20px	
+		+breakpoint($tablet)
+			font-size: 15px
+		+breakpoint($celular)		
+			font-size: 10px

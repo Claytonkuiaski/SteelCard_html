@@ -1,0 +1,50 @@
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables
+@import ../bower_components/breakpoint-sass/stylesheets/breakpoint
+@import mixins
+
+
+.navbar-collapse .navbar-nav
+   display: none
+   +breakpoint($celubot)
+      display: inline
+      
+.bar2 .navbar-nav
+   color: #fff
+   background-color: transparent
+   +breakpoint($celubot)
+      display: none      
+   
+.navbar-default 
+   background: none
+   border: none
+
+.navbar-default .navbar-nav>li>a 
+   color: #fff
+   padding-top: 1px
+   padding-bottom: 1px
+   +breakpoint($celubot)
+      padding-top: 10px
+      padding-bottom: 10px
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus 
+   color: black
+   background-color: #fff
+   +transition(.8s)
+   +breakpoint($celubot)
+      color: black
+      background-color: #fff
+      +transition(.6s)
+
+
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus 
+   color: #fff
+   background-color: none
+
+
+
+       

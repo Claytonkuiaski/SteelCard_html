@@ -1,0 +1,26 @@
+{
+  "name": "Projeto",
+  "homepage": "https://github.com/Claytonkuiaski/SteelCard",
+  "authors": [
+    "claytonKuiaski <claytonKuiaski@hotmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrap-sass": "^3.3.7",
+    "breakpoint-sass": "^2.7.1",
+    "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {
+    "wow": "wowjs#^1.1.2"
+  }
+}

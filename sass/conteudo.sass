@@ -1,0 +1,47 @@
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables
+@import ../bower_components/breakpoint-sass/stylesheets/breakpoint
+@import mixins
+
+hr
+	border: 1px solid #bcbcbc
+	size: 50%
+	width: 80% 
+h1
+	text-transform: uppercase
+	font-family: times new roman
+	font-style: italic	
+	font-size: 40px
+	color: #5b5a5a
+	text-align: center
+	margin-top: 100px
+	margin-bottom: 100px
+h2 	
+	font-family: times new roman
+	font-weight: bold	
+	margin-left: 30px
+p 
+	font-family: times new roman		
+	color: #5b5a5a
+	font-size: 20px
+	margin-left: 30px
+.logoConteudo
+	+make-sm-column(6)
+	+img-responsive
+	margin-top: 100px	
+	margin-bottom: 100px
+	+breakpoint($tablet)
+		+make-sm-column(12)	
+		
+.artigo
+	+make-sm-column(6)
+	margin-top: 120px
+	text-align: justify
+	+breakpoint($tablet)
+		+make-sm-column(12)
+		margin-bottom: 100px
+		h2
+			text-align: center
+			font-size: 30px
+		p 
+			font-size: 25px	

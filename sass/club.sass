@@ -1,0 +1,112 @@
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables
+@import ../bower_components/breakpoint-sass/stylesheets/breakpoint
+@import mixins
+@import ../bower_components/font-awesome/css/font-awesome.css
+@import menu_responsivo
+@import conteudo
+@import footer
+
+
+
+.header
+	min-height: 630px	
+	background:
+		image: url('../images/fundo-menu-pagina-club.jpg')
+		repeat: no-repeat
+		position: top center
+		size: cover
+	width: 100%
+	height: 100%	
+	font-size: 10px
+	ul li a 
+		padding-left: 8px	
+		padding-right: 8px
+		
+	ul
+		margin-left: 150px	
+		+breakpoint($celubot)
+			display: inline
+			font-size: 20px
+			a
+				border: solid 1px #fff
+			
+
+.logo
+	+img-responsive
+	margin-top: 40px
+	margin-left: 35%
+	width: 300px
+	+breakpoint($tablet)
+		padding-top: 40px
+		margin: 0 auto
+		width: 500px
+	+breakpoint($celular)
+		margin-left: 0%	
+		
+.membership
+	margin-left: 1px
+
+	h3
+		font-family: times new roman
+		font-size: 18px
+		font-weight: bold
+		text-transform: uppercase
+		color: #5b5a5a
+		text-align: center
+		padding-bottom: 100px
+		+breakpoint($celubot)
+			h3
+				padding-bottom: 10px
+
+	img
+		+img-responsive
+		width: 150px
+		margin-top: 100px
+	a	
+		color: #5b5a5a
+	+breakpoint($celubot)
+		+img-responsive
+		img 
+			margin: 0 auto	
+.souvenirs
+	+make-sm-column(2)
+	margin-left: 90px
+	+breakpoint($tablet)
+		margin-left: 55px
+	+breakpoint($celubot)
+		margin-left: 0px	
+.events
+	+make-sm-column(2)
+.vip
+	+make-sm-column(2)
+.business
+	+make-sm-column(2)
+.card
+	+make-sm-column(2)	
+.member
+	+make-sm-column(12)
+	ul 	
+		text-align: center
+		margin-top: 70px
+		li 
+			list-style: none
+			text-transform: uppercase
+			font-family: times new roman
+			font-size: 30px
+			+breakpoint($celular)
+				font-size: 15px
+			a 
+				border: solid 1px #5b5a5a
+				padding: 10px 
+				color: #5b5a5a
+			:hover 
+				text-decoration: none
+				background-color: #5b5a5a
+				color: #fff
+				+transition(.4s)
+	
+
+
+

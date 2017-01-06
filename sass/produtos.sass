@@ -1,0 +1,92 @@
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables
+@import ../bower_components/breakpoint-sass/stylesheets/breakpoint
+@import mixins
+
+
+
+.produtos
+	min-height: 511px	
+	background:
+		image: url('../images/fundoProdutos.jpg')
+		repeat: repeat
+		position: top center
+		size: cover
+	img
+		width: 250px
+		text-align: center
+
+.meio h2
+	font-family: times new roman
+	font-size: 30px
+	color: #5b5a5a
+	text-transform: uppercase
+	text-align: center
+	margin-top: 100px
+	margin-bottom: 100px
+.ofertas
+	margin-left: 1px
+	p 
+		text-align: center
+	h3
+		font-family: times new roman
+		font-size: 18px
+		font-weight: bold
+		text-transform: uppercase
+		text-align: center
+		color: #5b5a5a
+	h4
+		font-family: times new roman
+		font-size: 15px
+		text-transform: uppercase
+		text-align: center	
+		color: #5b5a5a
+	h5
+		font-family: times new roman	
+		font-weight: bold
+		font-size: 15px
+		text-transform: uppercase
+		text-align: center
+		color: #5b5a5a
+		margin-bottom: 100px
+	img
+		+img-responsive
+		margin-top: 100px
+		margin-left: 50px
+		+breakpoint($tablet)
+			+img-responsive
+			margin-left: 220px
+			margin-top: 20px
+			margin-bottom: 0px
+		+breakpoint($celular)
+			margin-left: 30px
+			+img-responsive	
+		+breakpoint($celubot)	
+			+img-responsive
+			margin: 0 auto
+	a	
+		color: #5b5a5a
+.relogio
+	+make-sm-column(4)
+	+breakpoint($tablet)
+		
+		+make-sm-column(12)
+		+img-responsive
+	+breakpoint($celular)
+			
+.carro	
+	+make-sm-column(4)
+	+breakpoint($tablet)
+		
+		+make-sm-column(12)
+	+breakpoint($celular)
+		
+.barco 
+	+make-sm-column(4)	
+	+breakpoint($tablet)
+		
+		+make-sm-column(12)
+	+breakpoint($celular)
+			
+
+
